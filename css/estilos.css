@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1 {
+    color: white;
+    font-size: 75px;
+    text-align: center;
+    text-justify: center;
+}
+
+h2 {
+    background-color: black;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    text-justify: center;
+}
+
+
+img {
+    width: 100%;
+    /* height: 250px; */
+}
+
+.contenedor-juegos {
+    margin: 1.5rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.card {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 12px;
+    border: 3px solid black;
+    border-radius: 10px;
+    color: black;
+    overflow: hidden;
+}
+
+.btn-comprar {
+    background-color: #FF7F11;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-comprar:hover {
+    background-color: #AFCBFF
+} 
+
+h3 {
+    background-color: #E6EED6;
+}
+
+h4 {
+    background-color: #E6EED6;
+}
+
+.imagen-juego {
+
+    object-position: center;
+    
+}
+
+.agregados-carrito {
+    margin: 1.5rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.card-carrito {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 15px;
+    border: 3px solid black;
+    border-radius: 10px;
+    color: black;
+    overflow: hidden;
+}
+
+.img-carrito {
+    width: 100%;
+}
+
+.total-carrito {
+    background-color: #FF7F11;
+    width: 200px;
+    text-align: center;
+    margin-left: 10px;
+    font-size: 25px;
+    border-radius: 10px;
+    color: black;
+}
