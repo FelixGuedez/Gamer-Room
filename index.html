@@ -69,19 +69,41 @@
         </template>
 
         <template id="template-carrito">
-            <div class="card mb-3" style="max-width: 150px;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="" alt="" height="100" class="img-fluid rounded-start">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <p class="card-text card-titulo">Titulo</p>
-                            <p class="card-text tipo-consola"><small class="text-muted">Consola</small></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Juego</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Precio</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody-carrito">
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>
+                            <div class="card mb-3" style="max-width: 150px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="" alt="" height="100" class="img-fluid rounded-start">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <p class="card-text card-titulo">Titulo</p>
+                                            <p class="card-text tipo-consola"><small class="text-muted">Consola</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>cantidad</td>
+                        <td>Precio</td>
+                    </tr>
+                    <tr>
+                </tbody>
+            </table>
+
         </template>
 
 
@@ -94,4 +116,3 @@
 </body>
 
 </html>
-
