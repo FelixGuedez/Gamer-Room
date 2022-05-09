@@ -53,3 +53,19 @@ header .navbar .container-fluid .navbar-brand span {
 .tipo-consola {
     font-size: 10px;
 }
+
+.btn-filtro {
+    color: white;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-filtro:hover {
+    color: #FF7F11;
+
+}
