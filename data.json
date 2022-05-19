@@ -5,7 +5,7 @@
         "consola": "Ps4", 
         "precio": 10000, 
         "cantidad": 1, 
-        "img": "../images/God of War.jpg"
+        "img": "./images/God of War.jpg"
     },
     { 
         "id": 2, 
@@ -13,7 +13,7 @@
         "consola": "Ps4", 
         "precio": 12000, 
         "cantidad": 1, 
-        "img": "../images/The Last of Us.jpg"
+        "img": "./images/The Last of Us.jpg"
     },
     { 
         "id": 3, 
@@ -21,7 +21,7 @@
         "consola": "Ps4", 
         "precio": 17000, 
         "cantidad": 1, 
-        "img": "../images/FIFA 22.jpg"
+        "img": "./images/FIFA 22.jpg"
     },
     { 
         "id": 4, 
@@ -29,7 +29,7 @@
         "consola": "Ps4", 
         "precio": 13000, 
         "cantidad": 1, 
-        "img": "../images/F1 2021.jpg" 
+        "img": "./images/F1 2021.jpg" 
     },
     { 
         "id": 5, 
@@ -37,7 +37,7 @@
         "consola": "Ps5", 
         "precio": 20000, 
         "cantidad": 1, 
-        "img": "../images/Elden Ring.jpg" 
+        "img": "./images/Elden Ring.jpg" 
     },
     { 
         "id": 6, 
@@ -45,7 +45,7 @@
         "consola": "Ps5", 
         "precio": 25000, 
         "cantidad": 1, 
-        "img": "../images/Horizon Forbidden West.jpg" 
+        "img": "./images/Horizon Forbidden West.jpg" 
     },
     { 
         "id": 7, 
@@ -53,7 +53,7 @@
         "consola": "Ps5", 
         "precio": 23000, 
         "cantidad": 1, 
-        "img": "../images/Gran Turismo 7.jpg" 
+        "img": "./images/Gran Turismo 7.jpg" 
     },
     { 
         "id": 8, 
@@ -61,7 +61,7 @@
         "consola": "Ps5", 
         "precio": 18000, 
         "cantidad": 1, 
-        "img": "../images/Demons Soul.jpg"
+        "img": "./images/Demons Soul.jpg"
     },
 
     { 
@@ -70,7 +70,7 @@
         "consola": "Ps4", 
         "precio": 23000, 
         "cantidad": 1, 
-        "img": "../images/Call Of Duty Modern Warfare.jpg"
+        "img": "./images/Call Of Duty Modern Warfare.jpg"
     },
 
     { 
@@ -79,7 +79,7 @@
         "consola": "Ps4", 
         "precio": 14000, 
         "cantidad": 1, 
-        "img": "../images/Cyberpunk 2077.jpg"
+        "img": "./images/Cyberpunk 2077.jpg"
     },
 
     { 
@@ -88,7 +88,7 @@
         "consola": "Ps4", 
         "precio": 16000, 
         "cantidad": 1, 
-        "img": "../images/GTA 5.jpg"
+        "img": "./images/GTA 5.jpg"
     },
 
     { 
@@ -97,7 +97,7 @@
         "consola": "Ps4", 
         "precio": 18000, 
         "cantidad": 1, 
-        "img": "../images/Mortal Kombat 11.jpg"
+        "img": "./images/Mortal Kombat 11.jpg"
     },
 
     { 
@@ -106,7 +106,7 @@
         "consola": "Ps4", 
         "precio": 18000, 
         "cantidad": 1, 
-        "img": "../images/The Last Of Us 2.jpg"
+        "img": "./images/The Last Of Us 2.jpg"
     },
 
     { 
@@ -115,7 +115,7 @@
         "consola": "Ps5", 
         "precio": 21000, 
         "cantidad": 1, 
-        "img": "../images/Assassins Creed Valhalla.jpg"
+        "img": "./images/Assassins Creed Valhalla.jpg"
     },
 
     
@@ -125,34 +125,34 @@
         "consola": "Ps5", 
         "precio": 26000, 
         "cantidad": 1, 
-        "img": "../images/Call Of Duty Coldwar.jpg"
+        "img": "./images/Call Of Duty Coldwar.jpg"
     },
 
     { 
         "id": 16, 
         "nombre": "FAR CRY 6", 
         "consola": "Ps5", 
-        "precio": 26000, 
+        "precio": 17000, 
         "cantidad": 1, 
-        "img": "../images/Far Cry 6.jpg"
+        "img": "./images/Far Cry 6.jpg"
     },
 
     { 
         "id": 17, 
         "nombre": "RETURNAL", 
         "consola": "Ps5", 
-        "precio": 26000, 
+        "precio": 14000, 
         "cantidad": 1, 
-        "img": "../images/Returnal.jpg"
+        "img": "./images/Returnal.jpg"
     },
 
     { 
         "id": 18, 
         "nombre": "SPIDERMAN MILES MORALES", 
         "consola": "Ps5", 
-        "precio": 26000, 
+        "precio": 20000, 
         "cantidad": 1, 
-        "img": "../images/Spiderman Miles Morales.jpg"
+        "img": "./images/Spiderman Miles Morales.jpg"
     }
     
 ]
