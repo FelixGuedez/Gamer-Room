@@ -6,6 +6,7 @@ const templateCard = document.getElementById('template-card').content
 const fragment = document.createDocumentFragment()
 const fragment2 = document.createDocumentFragment()
 const btnComprar = document.getElementsByClassName('btn-comprar')
+const busqueda = document.getElementById('busqueda')
 const templateCarrito = document.getElementById('template-carrito').content
 const listaCarrito = document.getElementById('lista-carrito')
 const listadoCarrito = document.getElementById('items-carrito')
@@ -13,8 +14,10 @@ const carCarrito = document.getElementById('car-carrito')
 const tBodyCarrito = document.getElementById('tbody-carrito')
 const totalCarrito = document.getElementById('total-carrito')
 const templateTotalCarrito = document.getElementById('template-total-carrito').content
+const iconoCarrito = document.getElementById('cantidad-carrito')
 const total = document.getElementById('total')
 const titulo = document.getElementById('titulo')
+const informacion = document.getElementById('informacion')
 let juegos = []
 let juegoCarrito = []
 let totalCompra = 0
@@ -26,7 +29,6 @@ const pedirData = async () => {
         const resp = await fetch('data.json')
         const data = await resp.json()
         juegos = data
-        console.log(juegos)
         mostrarJuegos(data)
 
     } catch (error) {
@@ -34,6 +36,7 @@ const pedirData = async () => {
     }
 }
 
+console.log(busqueda)
 
 document.addEventListener('DOMContentLoaded', () => {
     pedirData()
@@ -43,6 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // --------- Evento para click en comprar ---------------------------------------------//
 contenedorJuegosDisponibles.addEventListener('click', e => {
     agregarCarrito(e)
+    e.stopPropagation()
 })
 
 // --------- Evento para click para Filtrar PS4---------------------------------------------//
@@ -75,6 +79,25 @@ listadoCarrito.addEventListener('click', e => {
     btnAccion(e)
 })
 
+// listadoCarrito.addEventListener('click', e => {
+//     btnAccion(e)
+// })
+
+// busqueda.addEventListener('submit', e => {
+//     console.log('Buscandooooo.....')
+//     e.stopPropagation()
+//     const nombreBusqueda = e.target.querySelector('input').value.toUpperCase()
+//     console.log(nombreBusqueda)
+//     resultadoBusqueda = juegos.filter((el) => el.nombre.includes(nombreBusqueda))
+//     if (resultadoBusqueda !== []) {
+//         contenedorTodosLosJuegos.querySelector('h2').textContent = 'Resultado de la Busqueda'
+//         contenedorTodosLosJuegos.querySelector('informacion').textContent = 'Se muestra los juegos con la palabra'
+
+//     }
+
+//     busqueda.reset()
+//     })
+
 
 // ---------Mostrar los juegos en HTML -----------------------//
 function mostrarJuegos(items) {
@@ -93,9 +116,6 @@ function mostrarJuegos(items) {
 
 // --------- Agregar el juego seleccionado al Carrito -----------------------------------//
 function agregarCarrito(e) {
-    // const juegoSeleccionado = juegos.find(juego => juego.id === id);
-    // juegoCarrito.push(juegoSeleccionado);
-    // juegosEnCarrito(juegoCarrito);
     const juegoAgregado = e.target.parentElement
     if (e.target.classList.contains('btn-comprar')) {
         const id = parseInt(juegoAgregado.querySelector('button').dataset.id)
@@ -104,8 +124,8 @@ function agregarCarrito(e) {
             text: "Se Agrego Item al Carrito",
             className: "info",
             offset: {
-                x: 250, // horizontal axis - can be a number or a string indicating unity. eg: '2em'
-                y: 0 // vertical axis - can be a number or a string indicating unity. eg: '2em'
+                x: 250,
+                y: 0 
             },
             style: {
                 background: "linear-gradient(to right, #FF7F11, #D49541 )",
@@ -122,6 +142,7 @@ function agregarCarrito(e) {
             juegoCarrito.push(juegoSeleccionado);
         }
         juegosEnCarrito(juegoCarrito);
+        
     }
     e.stopPropagation()
 
@@ -154,18 +175,21 @@ function juegosEnCarrito(carrito) {
     templateTotalCarrito.querySelector('th').textContent = 'Total Productos'
     templateTotalCarrito.querySelectorAll('td')[1].textContent = nCantidad
     templateTotalCarrito.querySelectorAll('td')[2].textContent = '  $' + nTotal + ' CLP'
+    iconoCarrito.querySelector('p').textContent= nCantidad
     const clone = templateTotalCarrito.cloneNode(true)
     fragment.appendChild(clone)
     totalCarrito.appendChild(fragment)
-    // --------- Elimiar Items del Carrito -----------------------------------// 
+    
+
+    // --------- Eliminar Items del Carrito -----------------------------------// 
     const btnVaciar = document.getElementById('vaciar-carrito')
     btnVaciar.addEventListener('click', () => {
         Toastify({
             text: "Se Vacio Carrito",
             className: "info",
             offset: {
-                x: 250, // horizontal axis - can be a number or a string indicating unity. eg: '2em'
-                y: 0 // vertical axis - can be a number or a string indicating unity. eg: '2em'
+                x: 250,
+                y: 0
             },
             style: {
                 background: "linear-gradient(to right, #FF0000, #BA1110 )",
@@ -181,6 +205,7 @@ function juegosEnCarrito(carrito) {
     localStorage.setItem('items', JSON.stringify(juegoCarrito))
 }
 
+// ---------Accion de Botones + y - en carrito -------------------------// 
 const btnAccion = e => {
     if (e.target.classList.contains('btn-info')) {
         const id = parseInt(e.target.parentElement.querySelector('button').dataset.id)
@@ -191,8 +216,8 @@ const btnAccion = e => {
             text: "Se Agrego Item al Carrito",
             className: "info",
             offset: {
-                x: 250, // horizontal axis - can be a number or a string indicating unity. eg: '2em'
-                y: 0 // vertical axis - can be a number or a string indicating unity. eg: '2em'
+                x: 250,
+                y: 0
             },
             style: {
                 background: "linear-gradient(to right, #FF7F11, #D49541 )",
@@ -224,6 +249,9 @@ const btnAccion = e => {
     }
 }
 
+
+
+// ---------Carga de Items del LocalStorage al Carrito  -------------------------// 
 if (localStorage.getItem('items')) {
     juegoCarrito = JSON.parse(localStorage.getItem('items'))
     juegosEnCarrito(juegoCarrito)

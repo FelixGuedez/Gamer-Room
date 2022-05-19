@@ -62,5 +62,97 @@
         "precio": 18000, 
         "cantidad": 1, 
         "img": "../images/Demons Soul.jpg"
+    },
+
+    { 
+        "id": 9, 
+        "nombre": "CALL OF DUTY MODERN WARFARE", 
+        "consola": "Ps4", 
+        "precio": 23000, 
+        "cantidad": 1, 
+        "img": "../images/Call Of Duty Modern Warfare.jpg"
+    },
+
+    { 
+        "id": 10, 
+        "nombre": "CYBERPUNK 2077", 
+        "consola": "Ps4", 
+        "precio": 14000, 
+        "cantidad": 1, 
+        "img": "../images/Cyberpunk 2077.jpg"
+    },
+
+    { 
+        "id": 11, 
+        "nombre": "GTA 5", 
+        "consola": "Ps4", 
+        "precio": 16000, 
+        "cantidad": 1, 
+        "img": "../images/GTA 5.jpg"
+    },
+
+    { 
+        "id": 12, 
+        "nombre": "MORTAL KOMBAT 11", 
+        "consola": "Ps4", 
+        "precio": 18000, 
+        "cantidad": 1, 
+        "img": "../images/Mortal Kombat 11.jpg"
+    },
+
+    { 
+        "id": 13, 
+        "nombre": "THE LAST OF US 2", 
+        "consola": "Ps4", 
+        "precio": 18000, 
+        "cantidad": 1, 
+        "img": "../images/The Last Of Us 2.jpg"
+    },
+
+    { 
+        "id": 14, 
+        "nombre": "ASSASSINS CREED VALHALLA", 
+        "consola": "Ps5", 
+        "precio": 21000, 
+        "cantidad": 1, 
+        "img": "../images/Assassins Creed Valhalla.jpg"
+    },
+
+    
+    { 
+        "id": 15, 
+        "nombre": "CALL OF DUTY COLDWAR", 
+        "consola": "Ps5", 
+        "precio": 26000, 
+        "cantidad": 1, 
+        "img": "../images/Call Of Duty Coldwar.jpg"
+    },
+
+    { 
+        "id": 16, 
+        "nombre": "FAR CRY 6", 
+        "consola": "Ps5", 
+        "precio": 26000, 
+        "cantidad": 1, 
+        "img": "../images/Far Cry 6.jpg"
+    },
+
+    { 
+        "id": 17, 
+        "nombre": "RETURNAL", 
+        "consola": "Ps5", 
+        "precio": 26000, 
+        "cantidad": 1, 
+        "img": "../images/Returnal.jpg"
+    },
+
+    { 
+        "id": 18, 
+        "nombre": "SPIDERMAN MILES MORALES", 
+        "consola": "Ps5", 
+        "precio": 26000, 
+        "cantidad": 1, 
+        "img": "../images/Spiderman Miles Morales.jpg"
     }
+    
 ]

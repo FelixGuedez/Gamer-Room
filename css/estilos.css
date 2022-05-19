@@ -4,9 +4,19 @@
     box-sizing: border-box;
 }
 
-/* header .navbar {
-    margin-bottom: 5px;
-} */
+#main-header {
+    width: 100%;
+	left: 0; 
+	top: 0;
+    position: fixed;
+    z-index: 100;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	padding-top: 80px; 
+}
 
 main .container-fluid h2 {
     color: white;
@@ -25,6 +35,18 @@ header .navbar .container-fluid .navbar-brand span {
     color: #FF7F11;
 }
 
+.card {
+    /* height: 200px; */
+    display: flex;
+    flex-direction: column;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.img-card {
+    object-fit: contain;
+}
+
 .btn-outline-success {
     color: #FF7F11;
     border-color: #FF7F11;
@@ -33,6 +55,7 @@ header .navbar .container-fluid .navbar-brand span {
 .btn-comprar {
     background-color: #FF7F11;
     display: inline-block;
+    font-size: 15px;
     padding: 0.5rem 1rem;
     margin: 1rem 0;
     border-radius: 10px;
@@ -68,4 +91,24 @@ header .navbar .container-fluid .navbar-brand span {
 .btn-filtro:hover {
     color: #FF7F11;
 
+}
+
+.imgcarrito {
+    padding-left: 30px;
+}
+
+.icono-carrito {
+    height: 20px;
+    width: 20px;
+    font-size: 15px;
+    border-radius: 50px;
+    background-color: #FF7F11;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.numero-carrito {
+    font-weight: bold
 }
