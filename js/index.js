@@ -36,8 +36,6 @@ const pedirData = async () => {
     }
 }
 
-console.log(busqueda)
-
 document.addEventListener('DOMContentLoaded', () => {
     pedirData()
     contenedorTodosLosJuegos.querySelector('h2').textContent = 'Todos los Juegos'
@@ -79,29 +77,8 @@ listadoCarrito.addEventListener('click', e => {
     btnAccion(e)
 })
 
-// listadoCarrito.addEventListener('click', e => {
-//     btnAccion(e)
-// })
-
-// busqueda.addEventListener('submit', e => {
-//     console.log('Buscandooooo.....')
-//     e.stopPropagation()
-//     const nombreBusqueda = e.target.querySelector('input').value.toUpperCase()
-//     console.log(nombreBusqueda)
-//     resultadoBusqueda = juegos.filter((el) => el.nombre.includes(nombreBusqueda))
-//     if (resultadoBusqueda !== []) {
-//         contenedorTodosLosJuegos.querySelector('h2').textContent = 'Resultado de la Busqueda'
-//         contenedorTodosLosJuegos.querySelector('informacion').textContent = 'Se muestra los juegos con la palabra'
-
-//     }
-
-//     busqueda.reset()
-//     })
-
-
 // ---------Mostrar los juegos en HTML -----------------------//
 function mostrarJuegos(items) {
-    // contenedorTodosLosJuegos.querySelector('h2').textContent = 'Todos los Juegos'
     items.forEach(juego => {
         // templateCard.querySelector('h5').textContent = juego.nombre
         templateCard.querySelector('p').textContent = '$' + juego.precio + ' CLP'
